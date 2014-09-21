@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Training - Coding the Architecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./static/css/codingthearchitecture.css" rel="stylesheet" media="screen">
+    <link href="./static/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <script src="./static/js/jquery-1.8.2.min.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="./static/js/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="http://www.codingthearchitecture.com"><img src="./static/img/cta.png" alt="Coding the Architecture" /></a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="http://www.codingthearchitecture.com/blogentries/1.html">Blog</a></li>
+                        <li><a href="http://www.codingthearchitecture.com/presentations/">Presentations</a></li>
+                        <li><a href="http://leanpub.com/software-architecture-for-developers" target="_blank">Book</a></li>
+                        <li><a href="http://www.codingthearchitecture.com/training/">Training</a></li>
+                    </ul>
+
+                    <form class="navbar-search pull-right" action="http://www.codingthearchitecture.com/search.action">
+                        <input name="query" type="text" value="" class="search-query input-small" placeholder="Search">
+                    </form>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section sectionIntroduction">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <h1>Software architecture training</h1>
+                <p>
+                    We provide one or two-day training courses that are practical and pragmatic guides to lightweight
+                    software architecture, covering the same content you'll find in
+                    <a href="https://leanpub.com/software-architecture-for-developers" target="_blank">Software Architecture for Developers - the book</a>.
+                    You'll learn:
+                </p>
+
+                <ul>
+                    <li>The essence of software architecture.</li>
+                    <li>Why the software architecture role should include coding, coaching and collaboration.</li>
+                    <li>The things that you *really* need to think about before coding.</li>
+                    <li>How to visualise your software architecture using <a href="http://www.methodsandtools.com/archive/softwarearchitecturesketches.php" target="_blank">simple sketches</a>.</li>
+                    <li>A lightweight approach to documenting your software.</li>
+                    <li>Why there is *no* conflict between agile and architecture.</li>
+                    <li>What "just enough" up front design means.</li>
+                    <li>How to identify risks with <a href="http://riskstorming.com" target="_blank">risk-storming</a>.</li>
+                </ul>
+
+                <p>
+                    A lightweight approach to software architecture is pivotal to successfully delivering software, and it can complement agile approaches rather than compete against them. After all, a good architecture enables agility and this doesn't happen by magic.
+                    The course will teach you how to create firm foundations by doing "just enough" up front design to understand the significant structural elements of the software,
+                    visualising/communicating this using some <a href="http://www.methodsandtools.com/archive/softwarearchitecturesketches.php" target="_blank">lightweight sketches</a> to communicate that vision to the team and ensuring that the highest priority risks are identified and mitigated.
+                </p>
+            </div>
+            <div class="span4">
+                <a href="https://leanpub.com/software-architecture-for-developers" target="_blank" class="thumbnail"><img src="./static/img/sa4d-book.png" alt="Software Architecture for Developers" /></a>
+            </div>
+        </div>
+
+        <p align="center">
+            <img src="./static/img/flags/Belgium.png" alt="Belgium" title="Belgium" />
+            <img src="./static/img/flags/Czech%20Republic.png" alt="Czech Republic" title="Czech Republic" />
+            <img src="./static/img/flags/Denmark.png" alt="Denmark" title="Denmark" />
+            <img src="./static/img/flags/England.png" alt="England" title="England" />
+            <img src="./static/img/flags/Finland.png" alt="Finland" title="Finland" />
+            <img src="./static/img/flags/France.png" alt="France" title="France" />
+            <img src="./static/img/flags/Germany.png" alt="Germany" title="Germany" />
+            <img src="./static/img/flags/Hungary.png" alt="Hungary" title="Hungary" />
+            <img src="./static/img/flags/Ireland.png" alt="Ireland" title="Ireland" />
+            <img src="./static/img/flags/Jersey.png" alt="Jersey" title="Jersey" />
+            <img src="./static/img/flags/Netherlands.png" alt="The Netherlands" title="The Netherlands" />
+            <img src="./static/img/flags/New%20Zealand.png" alt="New Zealand" title="New Zealand" />
+            <img src="./static/img/flags/Norway.png" alt="Norway" title="Norway" />
+            <img src="./static/img/flags/Poland.png" alt="Poland" title="Poland" />
+            <img src="./static/img/flags/Portugal.png" alt="Portugal" title="Portugal" />
+            <img src="./static/img/flags/Romania.png" alt="Romania" title="Romania" />
+            <img src="./static/img/flags/Scotland.png" alt="Scotland" title="Scotland" />
+            <img src="./static/img/flags/Spain.png" alt="Spain" title="Spain" />
+            <img src="./static/img/flags/Sweden.png" alt="Sweden" title="Sweden" />
+            <img src="./static/img/flags/Switzerland.png" alt="Switzerland" title="Switzerland" />
+            <img src="./static/img/flags/Ukraine.png" alt="Ukraine" title="Ukraine" />
+            <img src="./static/img/flags/United%20Arab%20Emirates.png" alt="United Arab Emirates" title="United Arab Emirates" />
+            <img src="./static/img/flags/United%20Kingdom(Great%20Britain).png" alt="United Kingdom" title="United Kingdom" />
+            <img src="./static/img/flags/United%20States%20of%20America%20(USA).png" alt="United States" title="United States" />
+        </p>
+        <p align="center">
+            Our courses and workshops have been run in more than twenty countries across Europe, the Middle East and the United States.
+        </p>
+
+        <div class="row hidden-phone">
+            <div class="span12 centered">
+                <h3>Agility and the essence of software architecture</h3>
+                <iframe width="480" height="302" src="http://www.ustream.tv/embed/recorded/46743935?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+                <p>Recorded at CRAFT 2014, Budapest</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="section sectionAgenda">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <a name="agenda"></a>
+                <h2>Agenda</h2>
+                <p>
+                    Here's a breakdown of what we cover on the course but the timings are indicative rather than set in stone because
+                    we like to foster discussion rather than cut it short. Although not listed, we do have 15-30 minute breaks mid-morning and mid-afternoon too.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span6">
+                <h3>Day 1</h3>
+                <ul>
+                <li><b>[09:00 - 09:15] Introductions and setting the scene</b></li>
+                <li><b>[09:15 - 10:00] What is software architecture?</b>
+                  <ul>
+                      <li>Defining software architecture.</li>
+                      <li>Is software architecture important?</li>
+                  </ul>
+                </li>
+                <li><b>[10:00 - 12:30] The software architecture role</b>
+                  <ul>
+                      <li>Seeing the big picture.</li>
+                      <li>The software architecture role and coding.</li>
+                      <li>Soft skills.</li>
+                      <li>Technical leadership.</li>
+                      <li>Implementing the role.</li>
+                  </ul>
+                </li>
+                <li class="agendaBreak"><b>[12:30 - 13:30] Lunch</b></li>
+                <li><b>[13:30 - 14:30] Designing software</b>
+                  <ul>
+                      <li>Requirements.</li>
+                      <li>Constraints.</li>
+                      <li>Principles.</li>
+                      <li>Designing software.</li>
+                  </ul>
+                </li>
+                    <li><b>[14:30 - 16:30] Software design exercise (iteration 1)</b></li>
+                    <li><b>[16:30 - 17:00] Software design exercise review</b></li>
+                    <ul>
+                        <li>What was challenging?</li>
+                        <li>Review the diagrams.</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="span6">
+                <h3>Day 2</h3>
+                <ul>
+                <li><b>[09:00 - 10:00] Visualising software</b>
+                  <ul>
+                      <li>We have a failure to communicate.</li>
+                      <li>Ineffective sketches.</li>
+                      <li>Effective sketches.</li>
+                      <li>The C4 model.</li>
+                      <li>Software architecture vs code.</li>
+                      <li>Software architecture as code.</li>
+                      <li>The value of sketches.</li>
+                  </ul>
+                </li>
+                <li><b>[11:00 - 12:30] Software design exercise (iteration 2)</b></li>
+                <li class="agendaBreak"><b>[12:30 - 13:30] Lunch</b></li>
+                <li><b>[13:30 - 14:30] Documenting software</b>
+                  <ul>
+                      <li>The need for documentation.</li>
+                      <li>The software guidebook.</li>
+                  </ul>
+                </li>
+                <li><b>[14:30 - 16:30] Agility and the essence of software architecture</b>
+                  <ul>
+                      <li>Software architecture in the software development life cycle.</li>
+                      <li>Agility.</li>
+                      <li>Firm foundations.</li>
+                  </ul>
+                </li>
+                <li><b>[16:30 - 17:00] Discussion, questions and wrap-up</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section sectionAbout">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+            <h2>Some more details</h2>
+            <h3>Is this a "death by PowerPoint" style course?</h3>
+            <p>
+                No way! The course is interactive; with a combination of presentation, group discussion and group working. Throughout the
+                course you'll also solidify everything you learn by designing some software. Basically you'll be broken up into groups and
+                asked to design a small software system from nothing but a set of requirements and a whiteboard. You can
+                <a href="http://www.codingthearchitecture.com/presentations/software-architecture-for-developers" target="_blank">view and download the full set of slides</a>
+                and see some <a href="http://www.flickr.com/photos/codingthearchitecture/sets/" target="_blank">photos from training courses and conference workshops</a>
+                if you want to get a feel for what we do.
+            </p>
+
+            <p align="center">
+                <img src="./static/img/training.jpg" alt="Training" />
+            </p>
+
+            <h3>Is there any coding?</h3>
+            <p>
+                In a word, no. The purpose of the training course is to look at the bigger picture elements of the software design
+                process so there's no focus on writing code. The case study does involve choosing technologies and frameworks
+                though, so that you understand how you'd go about actually building the system you design.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="section sectionDeliveryOptions">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <a name="delivery"></a>
+                <h2>Delivery options</h2>
+                <p>
+                    There are a number of ways that the training can be delivered, depending on your budget and how much support you need.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span6">
+                <h3>1. Private in-house courses</h3>
+                <p>
+                    We can run private courses at your own offices throughout Europe or potentially further afield. All we need is a
+                    room large enough for the attendees with a projector and some whiteboards/flipcharts. The suggested maximum class
+                    size is 15-20 people, but if you have the room then we're flexible. Please contact <a href="mailto:simon.brown at codingthearchitecture.com">simon.brown at codingthearchitecture.com</a>
+                    for a quote and availability.
+                </p>
+            </div>
+            <div class="span6">
+                <h3>2. Public courses</h3>
+                <p>
+                    Scheduled public courses are run on a regular basis by the following organisations. Please check their websites for dates and prices.
+                </p>
+
+                <ul>
+                    <li><img src="./static/img/flags/United%20Kingdom(Great%20Britain).png" alt="United Kingdom" /> <a href="https://skillsmatter.com/courses/200-software-architecture-developers" target="_blank">Skills Matter</a></li>
+                    <li><img src="./static/img/flags/Czech%20Republic.png" alt="Czech Republic" /> <a href="http://www.aguarra.cz/skoleni-software-architecture.html" target="_blank">Aguarra</a></li>
+                    <li><img src="./static/img/flags/Norway.png" alt="Norway" /> <a href="http://bouvet.no/en/Courses/Kurskategorier/" target="_blank">Bouvet</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span6">
+                <h3>3. Unsupported delivery</h3>
+                <p>
+                    You can use the following material to run the course yourself for <b>non-commercial and internal use only</b>:
+                </p>
+                <ul>
+                    <li><a href="http://static.codingthearchitecture.com/presentations/software-architecture-for-developers.pdf" target="_blank">The slides for the full two-day training course (PDF)</a></li>
+                    <li><a href="/training/static/case-study-financial-risk-system.pdf" target="_blank">The risk system handout used as a case study for the design exercise (PDF)</a></li>
+                </ul>
+                <p>
+                    Ideally you will have attended the course previously, but it is strongly recommended that you have read <a href="https://leanpub.com/software-architecture-for-developers" target="_blank">Software Architecture for Developers - the book</a> before running a course</a>.
+                </p>
+            </div>
+            <div class="span6">
+                <h3>4. Supported delivery</h3>
+                <p>
+                    In addition to the course materials, you can purchase <a href="https://leanpub.com/software-architecture-for-developers-instructor" target="_blank">an instructor's guide</a> and receive some support via Skype to help ensure that your course is a success.
+                    Again, this option is for <b>non-commercial and internal use only</b>. Ideally you will have attended the course previously and/or read <a href="https://leanpub.com/software-architecture-for-developers" target="_blank">Software Architecture for Developers - the book</a> before running a course</a>.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <h3>Conferences</h3>
+                <p>
+                    We regularly the run this content as workshops and tutorials at software development conferences around the world too. Keep an eye on the <a href="http://www.codingthearchitecture.com/blogentries/1.html" target="_blank">blog</a> for details.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section sectionTrainers">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <a name="trainers"></a>
+                <h2>Trainers</h2>
+                <p>
+                    The people who run the training courses are...
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span4 centered">
+                <img src="./static/img/simonbrown.jpg" alt="Simon Brown" class="profileImage" />
+                <h3><a href="http://www.simonbrown.je" target="_blank">Simon Brown</a></h3>
+                <p>
+                    Simon lives in Jersey (the largest of the Channel Islands) and works as an independent consultant, helping teams to build better software. His client list spans over 20 countries and includes organisations ranging from small technology startups through to global household names. Simon is an award-winning speaker and the author of <a href="http://leanpub.com/software-architecture-for-developers">Software Architecture for Developers</a> - a developer-friendly guide to software architecture, technical leadership and the balance with agility. He still codes too.
+                </p>
+            </div>
+            <div class="span4 centered">
+                <img src="./static/img/robannett.jpg" alt="Robert Annett" class="profileImage" />
+                <h3><a href="https://leanpub.com/u/robertannett" target="_blank">Robert Annett</a></h3>
+                <p>
+                    Robert has been a developer since 1995 and worked in industries from energy management to investment banking. Much of this work has involved upgrading and migrating legacy systems with the occasional green-field project (with integration to legacy systems, of course). He has worked in the IT industry long enough to realize that ALL successful systems become legacy eventually.
+                </p>
+                <p>
+                    Robert is the author of <a href="https://leanpub.com/WorkingWithLegacySystems">Working with Legacy Systems</a> - a practical guide to the systems we inherit and maintain.
+                </p>
+            </div>
+            <div class="span4 centered">
+                <img src="./static/img/robsmallshire.jpg" alt="Robert Smallshire" class="profileImage" />
+                <h3><a href="http://sixty-north.com/software_architecture_for_developers.html" target="_blank">Robert Smallshire</a></h3>
+                <p>
+                    Robert is a founding director of <a href="http://sixty-north.com">Sixty North</a>, a software product and consulting business in Norway. He has worked in senior architecture and technical management roles for several software companies, providing tools in the energy sector for dealing with the masses of information flowing from today’s digital oil fields. He has dealt with understanding, designing, advocating and implementing effective architectures for sophisticated scientific and enterprise software in Python, C++, C# and F# and JavaScript.
+                </p>
+                <p>
+                    Robert is a regular speaker at conferences, meet-ups and corporate software events, and can be found speaking about topics as diverse as behavioural microeconomics in software development to implementing web services on 8-bit microcontrollers. He is the organiser of the Oslo Python group and holds a Ph.D. in a natural science.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section sectionConfigurations">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <a name="configurations"></a>
+                <h2>Course configurations</h2>
+                <p>
+                The course can be run in a number of configurations and tailored if necessary:
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span3">
+                <h3>Software architecture for developers</h3>
+                <p class="duration">
+                    Duration: Two days
+                </p>
+                <p>
+                    The full two-day course, as described above.
+                </p>
+            </div>
+            <div class="span3">
+                <h3>Simple sketches for diagramming your software architecture</h3>
+                <p class="duration">
+                    Duration: One day
+                </p>
+                <p>
+                    The software design exercise and in-depth guidance on visualising and communicating software designs.
+                    This can either be based on the risk system case study that we typically use, or your own systems
+                    if you're looking to start diagramming them in a consistent way.
+                </p>
+            </div>
+            <div class="span3">
+                <h3>Software architecture in a day</h3>
+                <p class="duration">
+                    Duration: One day
+                </p>
+                <p>
+                    The majority of the content from the full two-day course without the software design exercises and the in-depth
+                    guidance or visualising and communicating software designs.
+                </p>
+            </div>
+            <div class="span3">
+                <h3>Software architecture for non-developers</h3>
+                <p class="duration">
+                    Duration: One hour to half a day
+                </p>
+                <p>
+                    An abridged version of the two-day course aimed at project managers, product managers, business analysts, ScrumMasters,
+                    infrastructure architects and other non-developers who need to know what software architecture is all about.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section sectionMaterials">
+    <div class="container">
+        <div class="row">
+            <div class="span4 centered">
+                <h2>Slides</h2>
+                <p>
+                    This is the full set of slides from the two-day training course.
+                </p>
+                <p align="center">
+                    <a href="http://www.codingthearchitecture.com/presentations/software-architecture-for-developers/"><img src="./static/img/sa4d-title-slide.png" alt="View/download the slides" class="thumbnail" /></a>
+                </p>
+            </div>
+
+            <div class="span4 centered">
+                <h2>Case study</h2>
+                <p>
+                    The financial risk system case study that we use during the training course.
+                </p>
+                <p align="center">
+                    <a href="./static/case-study-financial-risk-system.pdf"><img src="./static/img/sa4d-case-study-financial-risk-system.png" alt="Download the financial risk system case study" class="thumbnail" /></a>
+                </p>
+            </div>
+
+            <div class="span4 centered">
+                <h2>The C4 model poster</h2>
+                <p>
+                    This is an A3 (PDF format) poster summarising the C4 software architecture model.
+                </p>
+                <p align="center">
+                    <a href="http://static.codingthearchitecture.com/c4.pdf"><img src="./static/img/c4.png" alt="C4 model" class="thumbnail" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section sectionBook">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h2>Book a course</h2>
+                <blockquote>
+                    <i>"Really surprising training! I expected some typical spoken training about someones revolutionary method and I found a hands-on training that used the "do-yourself-and-fail" approach to learn the lesson, and taught us a really valuable, reasonable and simple method as an approach to start the architecture of a system. Highly recommended!"</i> (an attendee from the software architecture sketching workshop at GOTO Amsterdam 2014)
+                </blockquote>
+                <p>
+                    Contact <a href="mailto:simon.brown at codingthearchitecture.com">simon.brown at codingthearchitecture.com</a> for more details or to book a course.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="shareme">
+        <div class="row">
+            <div class="span3">
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://www.codingthearchitecture.com/training/" data-via="simonbrown">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="span3">
+                <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://www.codingthearchitecture.com/training/" data-counter="right"></script>
+            </div>
+            <div class="span3">
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.codingthearchitecture.com/training/&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+            </div>
+            <div class="span3">
+                <!-- Place this tag where you want the +1 button to render -->
+                <g:plusone annotation="inline" href="http://www.codingthearchitecture.com/training/" width="180"></g:plusone>
+
+                <!-- Place this render call where appropriate -->
+                <script type="text/javascript">
+                  window.___gcfg = {lang: 'en-GB'};
+
+                  (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                  })();
+                </script>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./static/js/bootstrap.min.js"></script>
+
+<!-- start of Google Analytics -->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-4643149-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+<!-- end of Google Analytics -->
+
+</body>
+</html>
