@@ -87,3 +87,15 @@ h3 {
     font-size: 14px;
     color: gray;
 }
+
+.country {
+    font-size: 11px;
+    display: inline;
+    margin-right: 10px;
+}
+img {
+    background: #ffffff;
+}
+.flag {
+    background: none;
+}
